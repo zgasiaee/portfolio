@@ -1,0 +1,255 @@
+.resumeContainer {
+  width: 55%;
+  height: 81vh;
+  background-color: #fff;
+  overflow-y: scroll;
+  border-radius: 0 0.4em 0.4em 0;
+}
+.resumeContainer .title .green {
+  color: #78cc6d;
+}
+.resumeContainer .title {
+  letter-spacing: 0.7px;
+  font-size: 1.3em;
+  padding: 1.5em;
+  border-bottom: 1px solid #ececec;
+}
+.resumeContainer .textContainer {
+  display: flex;
+}
+.resumeContainer .textContainer .textBox {
+  width: 50%;
+}
+.resumeContainer .textContainer .textBox .textHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  padding: 1.5em;
+}
+.resumeContainer .textContainer .textBox .textHeader:first-child {
+  border-right: 1px solid #ececec;
+}
+.resumeContainer .textContainer .textBox .textHeader img {
+  width: 40px;
+  filter: invert(69%) sepia(39%) saturate(471%) hue-rotate(66deg)
+    brightness(95%) contrast(95%);
+  margin-right: 0.8em;
+}
+.resumeContainer .textContainer .textBox .textHeader h4 {
+  font-family: PoppinsRegular;
+}
+.resumeContainer .textContainer .textBox .textBody .textItem {
+  padding: 1.5em;
+  border-bottom: 1px solid #ececec;
+}
+.resumeContainer .textContainer .textBox .textBody .textItem:last-child {
+  border-bottom: none;
+}
+.resumeContainer .textContainer .textBox #border {
+  border-right: 1px solid #ececec;
+}
+.resumeContainer .textContainer .textBox .textBody .textItem .year {
+  border: 1px solid #c0c1c0;
+  color: #a4a3a4;
+  font-size: 0.75em;
+  padding: 0.1em 0.3em;
+}
+.resumeContainer .textContainer .textBox .textBody .textItem .textTitle {
+  margin: 0.8em 0;
+  font-family: PoppinsMedium;
+  letter-spacing: 0.6px;
+  color: #323232;
+}
+.resumeContainer .textContainer .textBox .textBody .textItem .text {
+  font-size: 0.95em;
+  margin: 0.5em 0;
+  color: #323232;
+}
+.resumeContainer .textContainer .textBox .textBody .textItem .buttonContainer {
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  margin: 0.8em 0;
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .textBody
+  .textItem
+  .buttonContainer
+  button,
+.resumeContainer
+  .textContainer
+  .textBox
+  .textBody
+  .textItem
+  .buttonContainer
+  a {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: PoppinsMedium;
+  color: #323232;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .textBody
+  .textItem
+  .buttonContainer:hover {
+  filter: invert(69%) sepia(39%) saturate(471%) hue-rotate(66deg)
+    brightness(95%) contrast(95%);
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .textBody
+  .textItem
+  .buttonContainer
+  img {
+  width: 12px;
+  margin-left: 0.3em;
+}
+.resumeContainer .textContainer .textBox .codeContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-right: 1px solid #ececec;
+}
+.resumeContainer .textContainer .textBox .codeContainer .codeItem {
+  margin: 1.1em ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resumeContainer .textContainer .textBox .codeContainer .codeItem .circle {
+  width: 85px;
+  height: 85px;
+}
+.resumeContainer .textContainer .textBox .codeContainer .codeItem .text {
+  margin-top: 0.5em;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #323232;
+}
+.resumeContainer .textContainer .textBox .language {
+  padding: 1.5em;
+  padding-bottom: 2.5em;
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .languageContainer
+  .language
+  .circleContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+.resumeContainer .textContainer .textBox .languageContainer .language span {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #323232;
+}
+.resumeContainer .textContainer .textBox .languageContainer .language .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.resumeContainer .textContainer .textBox .languageContainer .textHeader img {
+  width: 30px;
+}
+.resumeContainer .textContainer .textBox .languageContainer .textBody {
+  padding: 1.5em;
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .languageContainer
+  .textBody
+  .interestItem {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .languageContainer
+  .textBody
+  .interestItem
+  img {
+  width: 30px;
+  margin-right: 0.6em;
+  filter: invert(69%) sepia(39%) saturate(471%) hue-rotate(66deg)
+    brightness(95%) contrast(95%);
+}
+.resumeContainer
+  .textContainer
+  .textBox
+  .languageContainer
+  .textBody
+  .interestItem
+  span {
+  font-size: 0.9em;
+  color: #323232;
+}
+
+@media only screen and (max-width: 1200px) {
+  .resumeContainer {
+    width: 100%;
+    height: 85vh;
+    border-radius: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .resumeContainer .textContainer {
+    flex-direction: column;
+  }
+  .resumeContainer .textContainer .textBox {
+    width: 100%;
+  }
+  .resumeContainer .textContainer .textBox .textHeader:first-child {
+    border-right: none;
+  }
+  .resumeContainer .textContainer .textBox #border {
+    border-right: none;
+  }
+  .resumeContainer .textContainer .textBox .codeContainer {
+    border-right: none;
+  }
+  .resumeContainer .textContainer .textBox .codeContainer .codeItem {
+    margin: 1.5em;
+  }
+  .resumeContainer .textContainer .textBox .codeContainer .codeItem .circle {
+    width: 110px;
+    height: 110px;
+  }
+  .resumeContainer
+    .textContainer
+    .textBox
+    .languageContainer
+    .language
+    .circleContainer {
+    margin-top: 1.5em;
+  }
+  .resumeContainer
+    .textContainer
+    .textBox
+    .languageContainer
+    .language
+    .circle {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .resumeContainer {
+    border-radius: 0 ;
+  }
+}

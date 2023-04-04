@@ -1,0 +1,171 @@
+.contactContainer {
+  width: 55%;
+  height: 81vh;
+  background-color: #fff;
+  overflow-y: scroll;
+  border-radius: 0 0.4em 0.4em 0;
+}
+.contactContainer .title .green {
+  color: #78cc6d;
+}
+.contactContainer .title {
+  letter-spacing: 0.7px;
+  font-size: 1.3em;
+  padding: 1.5em;
+  border-bottom: 1px solid #ececec;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+}
+.textContainer .item {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 0.9em;
+}
+.textContainer .item:last-child {
+  border-bottom: none;
+}
+.textContainer .item .question {
+  background-color: #78cc6d;
+  color: #fff;
+  border-radius: 0.25em;
+  padding: 0.1em 0.5em;
+}
+.inputContainer {
+  padding: 2em 1em;
+}
+.inputContainer .rowInput{
+  width: 100%;
+  display: flex;
+}
+.inputContainer .inputItem{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0.5em 1em;
+}
+.inputContainer .inputItem span{
+  font-size: 0.7em;
+  margin-top: 0.8em;
+  background-color:rgba(255,0,0,0.175);
+  color: red;
+  border-radius: 3px;
+  width: fit-content;
+  padding: 0.2em 0.5em;
+}
+.inputContainer input,
+.inputContainer textarea {
+  border: 2px solid #ececec;
+  padding: 0.8em 1em;
+  color: #323232;
+  width: 100%;
+}
+.inputContainer input:focus,
+.inputContainer textarea:focus {
+  outline: none;
+  border: 2px solid #78cc6d;
+}
+.inputContainer input::placeholder,
+.inputContainer textarea::placeholder {
+  font-size: 0.9em;
+}
+.inputContainer textarea {
+  width: 95%;
+  resize: none;
+  height: 12vh;
+}
+.inputContainer .unComplete{
+  border: 2px solid red;
+}
+.inputContainer .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  border-radius: 0.3em;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  padding: 0 0.5em;
+  width: 35%;
+  cursor: pointer;
+}
+.inputContainer .buttonContainer button {
+  border: none;
+  background-color: transparent;
+  font-family: PoppinsRegular;
+  color: #323232;
+  transition: 0.4s;
+  padding: 0.8em 0;
+  width: 80%;
+}
+.inputContainer .buttonContainer img {
+  width: 15px;
+  margin-left: 1em;
+  transition: 0.4s;
+}
+.inputContainer .buttonContainer:hover img,
+.inputContainer .buttonContainer:hover button {
+  filter: invert(69%) sepia(39%) saturate(471%) hue-rotate(66deg)
+    brightness(95%) contrast(95%);
+}
+.inputContainer .buttonContainer:hover img {
+  margin-left: 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactContainer {
+    width: 100%;
+    height: 85vh;
+    border-radius: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .textContainer .item {
+    flex-direction: column;
+  }
+  .textContainer .item .question {
+    margin-bottom: 1em;
+    width: fit-content;
+  }
+  .inputContainer textarea {
+    height: 15vh;
+  }
+  .inputContainer .buttonContainer {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contactContainer {
+    border-radius: 0;
+  }
+  .inputContainer .rowInput{
+    flex-direction: column;
+  }
+  .inputContainer .inputItem{
+    width: 95%;
+  }
+  .inputContainer input {
+    margin: 1em 0;
+  }
+  .inputContainer textarea {
+    margin: 1em 0;
+    height: 17vh;
+  }
+  .inputContainer .buttonContainer {
+    margin-left: 0;
+    width: 95%;
+  }
+  .inputContainer .buttonContainer button {
+    font-size: 0.75em;
+  }
+  .inputContainer .buttonContainer img {
+    width: 13px;
+  }
+}

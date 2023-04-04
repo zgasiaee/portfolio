@@ -1,0 +1,114 @@
+.worksContainer {
+  width: 55%;
+  height: 81vh;
+  background-color: #fff;
+  overflow-y: scroll;
+  border-radius: 0 0.4em 0.4em 0;
+}
+.worksContainer .title .green {
+  color: #78cc6d;
+}
+.worksContainer .title {
+  letter-spacing: 0.7px;
+  font-size: 1.3em;
+  padding: 1.5em;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.worksContainer .title .itemContainer {
+  display: flex;
+}
+.worksContainer .title .itemContainer .item,
+.worksContainer .title .itemContainer .active {
+  list-style-type: none;
+  color: #848684;
+  font-size: 0.7em;
+  padding: 0 0.8em;
+  font-family: PoppinsThin;
+  cursor: pointer;
+}
+.worksContainer .title .itemContainer .item:first-child {
+  padding-left: 0;
+}
+.worksContainer .title .itemContainer .active {
+  color: #78cc6d;
+  transform: scale(1.1);
+}
+.worksContainer .projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+}
+.worksContainer .projectContainer .project {
+  width: 40%;
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.worksContainer .projectContainer .project .imgContainer {
+  width: 100%;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.worksContainer .projectContainer .project img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+.worksContainer .projectContainer .project .titleProject {
+  color: #3f4141;
+  font-family: PoppinsMedium;
+  font-size: 0.9em;
+  margin: 0.5em;
+}
+.worksContainer .projectContainer .project .textProject {
+  color: #9f9ea4;
+  font-size: 0.85em;
+}
+.worksContainer .projectContainer .project:hover .titleProject {
+  color: #78cc6d;
+}
+.worksContainer .projectContainer .project:hover img {
+  transform: scale(1.08);
+}
+
+@media only screen and (max-width: 1200px) {
+  .worksContainer {
+    width: 100%;
+    height: 85vh;
+    border-radius: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .worksContainer .title {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .worksContainer .title .itemContainer {
+    margin-top: 1em;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .worksContainer .projectContainer .project {
+    width: 100%;
+    margin: 0.8em 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .worksContainer {
+    border-radius: 0;
+  }
+  .worksContainer .title .itemContainer .item,
+.worksContainer .title .itemContainer .active {
+  font-size: 0.67em;
+}
+}
