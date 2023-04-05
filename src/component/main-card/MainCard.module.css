@@ -29,6 +29,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 35vh;
+  justify-content: space-between;
 }
 .card .textContainer .title {
   color: #323232;
@@ -65,7 +67,6 @@
 .card .buttonContainer {
   display: flex;
   width: 100%;
-  margin-top: 1.1em;
 }
 .card .buttonContainer .button {
   width: 50%;
@@ -126,9 +127,6 @@
   }
   .card .textContainer .career {
     font-size: 1em;
-  }
-  .card .buttonContainer {
-    /* margin-top: 2em; */
   }
   .card .buttonContainer .button {
     font-size: 0.78em;
