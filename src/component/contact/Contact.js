@@ -113,7 +113,9 @@ const Contact = () => {
         </div>
         <div className={styles.item}>
           <span className={styles.question}>Website :</span>
-          <span className={styles.answer}>http://localhost:3000</span>
+          <span className={styles.answer}>
+            https://zahra-goodasiaee.netlify.app
+          </span>
         </div>
         <div className={styles.item}>
           <span className={styles.question}>Freelance :</span>
