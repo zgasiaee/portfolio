@@ -142,6 +142,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .textContainer .item {
+    font-size: 0.8em;
+  }
   .contactContainer {
     border-radius: 0;
   }
