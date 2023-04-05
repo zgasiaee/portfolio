@@ -39,20 +39,20 @@
 .inputContainer {
   padding: 2em 1em;
 }
-.inputContainer .rowInput{
+.inputContainer .rowInput {
   width: 100%;
   display: flex;
 }
-.inputContainer .inputItem{
+.inputContainer .inputItem {
   display: flex;
   flex-direction: column;
   width: 45%;
   margin: 0.5em 1em;
 }
-.inputContainer .inputItem span{
+.inputContainer .inputItem span {
   font-size: 0.7em;
   margin-top: 0.8em;
-  background-color:rgba(255,0,0,0.175);
+  background-color: rgba(255, 0, 0, 0.175);
   color: red;
   border-radius: 3px;
   width: fit-content;
@@ -79,7 +79,7 @@
   resize: none;
   height: 12vh;
 }
-.inputContainer .unComplete{
+.inputContainer .unComplete {
   border: 2px solid red;
 }
 .inputContainer .buttonContainer {
@@ -148,10 +148,10 @@
   .contactContainer {
     border-radius: 0;
   }
-  .inputContainer .rowInput{
+  .inputContainer .rowInput {
     flex-direction: column;
   }
-  .inputContainer .inputItem{
+  .inputContainer .inputItem {
     width: 95%;
   }
   .inputContainer input {

@@ -128,7 +128,7 @@
     font-size: 1em;
   }
   .card .buttonContainer {
-    margin-top: 2em;
+    /* margin-top: 2em; */
   }
   .card .buttonContainer .button {
     font-size: 0.78em;
