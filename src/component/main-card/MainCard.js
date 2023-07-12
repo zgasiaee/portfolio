@@ -37,7 +37,7 @@ const MainCard = () => {
           </Link>
         </div>
         <div className={styles.buttonContainer}>
-          <a href='/resume.pdf' className={styles.button} download >
+          <a href='/Resume.pdf' className={styles.button} download >
             <p>DOWNLOAD CV</p>
             <img src={archive} alt="archive" />
           </a>
