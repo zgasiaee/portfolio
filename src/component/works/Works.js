@@ -20,7 +20,6 @@ import snapp from '../../assets/img/snapp.png'
 import footbal from '../../assets/img/footbal-show.png'
 import enfoldTravel from '../../assets/img/enfold-travel.png'
 import instagram from '../../assets/img/instagram.png'
-import graphqlBlog from '../../assets/img/graphql-blog.png'
 import ticTacToe from '../../assets/img/tic-tac-toe.png'
 import stopWatch from '../../assets/img/stop-watch.png'
 import gussColor from '../../assets/img/guss-color.png'
@@ -151,12 +150,6 @@ const Works = () => {
       name: 'random-person-info',
       slug: 'https://zgasiaee-random.netlify.app/',
       img: randomPerson,
-      category: 'React',
-    },
-    {
-      name: 'graphql-blog',
-      slug: 'https://zgasiaee-blog.netlify.app/',
-      img: graphqlBlog,
       category: 'React',
     },
     {

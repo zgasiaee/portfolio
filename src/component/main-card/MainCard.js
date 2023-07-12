@@ -13,7 +13,6 @@ import paperPlane from '../../assets/img/paper-plane.svg'
 import archive from '../../assets/img/archive.svg'
 
 const MainCard = () => {
-
   return (
     <div className={styles.card}>
       <figure className={styles.imgContainer}>
@@ -37,11 +36,11 @@ const MainCard = () => {
           </Link>
         </div>
         <div className={styles.buttonContainer}>
-          <a href='/Resume.pdf' className={styles.button} download >
+          <a href="/Resume.pdf" className={styles.button} download>
             <p>DOWNLOAD CV</p>
             <img src={archive} alt="archive" />
           </a>
-          <Link to='/contact' className={styles.button}>
+          <Link to="/contact" className={styles.button}>
             <p>CONTACT ME</p>
             <img src={paperPlane} alt="paper-plane" />
           </Link>
