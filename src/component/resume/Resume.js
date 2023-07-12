@@ -17,20 +17,28 @@ import list from '../../assets/img/list.svg'
 import check from '../../assets/img/check.svg'
 import frontEnd from '../../assets/img/front-end.png'
 import lessSass from '../../assets/img/less-sass.png'
+import backEnd from '../../assets/img/back-end.png'
 
 const Resume = () => {
   const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const coding = [
     { id: 1, name: 'Html', percentage: '100' },
     { id: 2, name: 'Css', percentage: '90' },
-    { id: 3, name: 'JavaScript', percentage: '80' },
-    { id: 4, name: 'React', percentage: '70' },
-    { id: 5, name: 'Less/Sass', percentage: '90' },
-    { id: 6, name: 'Git', percentage: '85' },
+    { id: 3, name: 'JavaScript', percentage: '70' },
+    { id: 4, name: 'Jquery', percentage: '80' },
+    { id: 5, name: 'Ajax', percentage: '70' },
+    { id: 6, name: 'Bootstrap', percentage: '65' },
+    { id: 7, name: 'React', percentage: '75' },
+    { id: 8, name: 'Redux', percentage: '70' },
+    { id: 9, name: 'GraphQl', percentage: '80' },
+    { id: 10, name: 'Less', percentage: '95' },
+    { id: 11, name: 'Sass', percentage: '95' },
+    { id: 12, name: 'Git', percentage: '100' },
   ]
 
   const [frontOpen, setFrontOpen] = useState(false)
   const [lessOpen, setLessOpen] = useState(false)
+  const [backOpen, setBackOpen] = useState(false)
 
   return (
     <div className={styles.resumeContainer}>
@@ -62,7 +70,9 @@ const Resume = () => {
                 collection.
               </p>
               <div className={styles.buttonContainer}>
-                <a href='https://zgasiaee-solaleh-reservation.netlify.app/' >DEMO</a>
+                <a href="https://zgasiaee-solaleh-reservation.netlify.app/">
+                  DEMO
+                </a>
                 <img src={arrow} alt="arrow" />
               </div>
             </div>
@@ -86,7 +96,8 @@ const Resume = () => {
               <span className={styles.year}>2021 - 2021</span>
               <h4 className={styles.textTitle}>Front End Course</h4>
               <p className={styles.text}>
-                Coursework : Html , Css , Javascript , Git
+                Coursework : Html , Css , Javascript , Jquery , Ajax , Bootstrap
+                , Git
               </p>
               <div className={styles.buttonContainer}>
                 <button onClick={() => setFrontOpen(true)}>CERTIFICATE</button>
@@ -96,6 +107,21 @@ const Resume = () => {
                 <Lightbox
                   mainSrc={frontEnd}
                   onCloseRequest={() => setFrontOpen(false)}
+                />
+              )}
+            </div>
+            <div className={styles.textItem}>
+              <span className={styles.year}>2022 - 2022</span>
+              <h4 className={styles.textTitle}>Back End Course</h4>
+              <p className={styles.text}>Coursework : Php , MySql</p>
+              <div className={styles.buttonContainer}>
+                <button onClick={() => setBackOpen(true)}>CERTIFICATE</button>
+                <img src={arrow} alt="arrow" />
+              </div>
+              {backOpen && (
+                <Lightbox
+                  mainSrc={backEnd}
+                  onCloseRequest={() => setBackOpen(false)}
                 />
               )}
             </div>
