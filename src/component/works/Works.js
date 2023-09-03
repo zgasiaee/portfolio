@@ -28,6 +28,7 @@ import bmiCalculator from '../../assets/img/bmi-calculator.png'
 import whackAMole from '../../assets/img/whack-a-mole.png'
 import waterAnimation from '../../assets/img/water-animation.png'
 import dayNight from '../../assets/img/day-night.png'
+import typescriptShopping from '../../assets/img/typescript-shopping.png'
 
 const Works = () => {
   const [active, setActive] = useState('All')
@@ -105,6 +106,12 @@ const Works = () => {
       category: 'Css',
     },
     {
+      name: 'typescript-shopping',
+      slug: 'https://zgasiaee-typescript-shopping.netlify.app/',
+      img: typescriptShopping,
+      category: 'JavaScript',
+    },
+    {
       name: 'pair-game',
       slug: 'https://zgasiaee-pair-game.netlify.app/',
       img: pairGame,
@@ -146,6 +153,7 @@ const Works = () => {
       img: weather,
       category: 'React',
     },
+    
     {
       name: 'random-person-info',
       slug: 'https://zgasiaee-random.netlify.app/',

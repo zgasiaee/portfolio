@@ -34,6 +34,7 @@ const Resume = () => {
     { id: 10, name: 'Less', percentage: '95' },
     { id: 11, name: 'Sass', percentage: '95' },
     { id: 12, name: 'Git', percentage: '100' },
+    { id: 13, name: 'TypeScript', percentage: '85' },
   ]
 
   const [frontOpen, setFrontOpen] = useState(false)
