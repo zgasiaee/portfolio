@@ -17,8 +17,8 @@ const About = () => {
         <div className={styles.textBox}>
           <span className={styles.bold}>Hello ! I’m Zahra Goodasiaee.</span>
           <p className={styles.normal}>
-            I’m Front End Devloper from Tehran , Iran . I have experience of
-            being intern for 3 months . I'm working with React as most popular
+            I’m Front End Devloper from Tehran , Iran . I have 1 year experience of
+            being Front End Devloper . I'm working with React as most popular
             Front End framework . I’m looking for a job to working as a Front
             End (React.js) Developer . I love to talk with you about our unique
             .
@@ -27,7 +27,7 @@ const About = () => {
         <div className={styles.textBox}>
           <div className={styles.item}>
             <span className={styles.question}>Age :</span>
-            <span className={styles.answer}>21</span>
+            <span className={styles.answer}>22</span>
           </div>
           <div className={styles.item}>
             <span className={styles.question}>Address :</span>

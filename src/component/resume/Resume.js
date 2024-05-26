@@ -77,6 +77,13 @@ const Resume = () => {
                 <img src={arrow} alt="arrow" />
               </div>
             </div>
+            <div className={styles.textItem}>
+              <span className={styles.year}>2023 - 2024</span>
+              <h4 className={styles.textTitle}>React Devloper</h4>
+              <p className={styles.text}>
+                Development of menus with different functionalities for comprehensive ERP system.
+              </p>
+            </div>
           </div>
         </div>
         <div className={styles.textBox}>
