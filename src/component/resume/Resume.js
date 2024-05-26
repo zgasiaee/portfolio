@@ -81,7 +81,7 @@ const Resume = () => {
               <span className={styles.year}>2023 - 2024</span>
               <h4 className={styles.textTitle}>React Devloper</h4>
               <p className={styles.text}>
-                Development of menus with different functionalities for comprehensive ERP system.
+                Development of menus with different functionalities for comprehensive ERP system of tyam software.
               </p>
             </div>
           </div>
