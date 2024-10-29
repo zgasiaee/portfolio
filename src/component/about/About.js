@@ -8,6 +8,9 @@ import quoteDown from '../../assets/img/quote-down.svg'
 import quoteUp from '../../assets/img/quote-up.svg'
 
 const About = () => {
+  const date = new Date()
+  let age = date.getFullYear() - 2002
+
   return (
     <div className={styles.aboutContainer}>
       <h2 className={styles.title}>
@@ -27,7 +30,7 @@ const About = () => {
         <div className={styles.textBox}>
           <div className={styles.item}>
             <span className={styles.question}>Age :</span>
-            <span className={styles.answer}>22</span>
+            <span className={styles.answer}>{age}</span>
           </div>
           <div className={styles.item}>
             <span className={styles.question}>Address :</span>

@@ -78,7 +78,7 @@ const Resume = () => {
               </div>
             </div>
             <div className={styles.textItem}>
-              <span className={styles.year}>2023 - 2024</span>
+              <span className={styles.year}>2023 - Present</span>
               <h4 className={styles.textTitle}>React Devloper</h4>
               <p className={styles.text}>
                 Development of menus with different functionalities for comprehensive ERP system of tyam software.
@@ -97,6 +97,14 @@ const Resume = () => {
               <h4 className={styles.textTitle}>Alzahra University</h4>
               <p className={styles.text}>
                 Bachelor's Degree in Computer Engineering Alzahra University,
+                Tehran, Iran.
+              </p>
+            </div>
+            <div className={styles.textItem}>
+              <span className={styles.year}>2024 - Present</span>
+              <h4 className={styles.textTitle}>Beheshti University</h4>
+              <p className={styles.text}>
+                Master's Degree in Computer Software Beheshti University,
                 Tehran, Iran.
               </p>
             </div>
